@@ -47,11 +47,11 @@ public class Excercise1 {
         private int counter;
         @Override
         public void run(){
-            for(counter = 0; counter <5; counter++){
+            for(counter = 0; counter <5; counter++){     
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException ex) {
-                    Logger.getLogger(ThreadTest.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Excercise1.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 System.out.println("Counter " +Thread.currentThread().getName()+ ": " +counter);
             }
@@ -68,11 +68,13 @@ public class Excercise1 {
                     Thread.sleep(3000);
                 } catch (InterruptedException ex) {
                     Thread.currentThread().interrupt();
-                    Logger.getLogger(ThreadTest.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Excercise1.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 System.out.println("counter for thread " +Thread.currentThread().getName()+ ": " +counter);
                 counter++;
             }
         }
     }
+    
+    
 }

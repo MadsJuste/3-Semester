@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package week1;
 
 /**
  *
  * @author Juste
  */
-public class Day1 {
-
+public class excercise5day1 {
+    
 }
